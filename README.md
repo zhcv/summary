@@ -1,3 +1,3 @@
 # hello-world
 
-learning git repository
+learning githup repository
