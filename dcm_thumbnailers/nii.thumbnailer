@@ -1,0 +1,4 @@
+[Thumbnailer Entry]
+TryExec=/home/zhang/.local/ubuntu-medical-imaging/scripts/nii_thumbnailer.py
+Exec=/home/zhang/.local/ubuntu-medical-imaging/scripts/nii_thumbnailer.py %s %i %o
+MimeType=image/nii;image/gznii;application/dicom;
