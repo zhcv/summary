@@ -152,7 +152,9 @@ The Mysql Data Directory
 Setting Up Multiple Data Directories
 
 
-
+## AT LAST
+# cd /mnt/volume-nyc1-01
+# chown -R mysql:mysql volume-nyc1-01
 
 
 
