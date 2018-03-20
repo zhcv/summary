@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# dcm convert to jpg
 filelist=/home/zhang/Desktop/dcm.txt
 savepath=/home/zhang/Desktop/wado_jpg/
 ext=.jpg
