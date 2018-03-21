@@ -1,13 +1,14 @@
 #!/usr/bin/env bash
-# dcm convert to jpg
-filelist=/home/zhang/Desktop/dcm.txt
-savepath=/home/zhang/Desktop/wado_jpg/
+
+filelist=/home/zhang/Desktop/dcmxinyingzd.txt
+filepath=/data/dcms/
+savepath=/home/zhang/Desktop/dcms_jpg2/
 ext=.jpg
 
-for i in `cat $filelist`;do
-#echo $i;
-len=${#i}
-FILE=${i##*/}
+for filename in `ls $filepath`;do
+#echo $filename;
+FULLNAME=$filepath$filename
+FILE=${FULLNAME##*/}
 #echo $FILE;
 #dirname "$i"
 name=${FILE%.*}
@@ -16,8 +17,8 @@ name=${FILE%.*}
 str=$savepath$name$ext
 #echo ${str##.*};
 # echo $savepath${name};
-#echo $str;
-/home/zhang/dcm4che-5.10.5/bin/dcm2jpg $i $str;
+# echo $str;
+/opt/dcm4che-5.10.5/bin/dcm2jpg $FULLNAME $str;
 done
 
 
