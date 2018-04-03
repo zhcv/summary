@@ -1,0 +1,26 @@
+1  双系统下修改系统选择倒计时
+
+修改这个倒计时时间，先修改配置文件（需要权限，在终端输入命令）：
+
+sudo gedit /etc/default/grub
+
+ 
+
+把前面的GRUB_TIMEOUT=10，10表示10秒，改为你需要的时间
+
+修改后保存。
+
+然后更新引导：
+
+sudo update-grub2
+
+2 ubuntu 不能挂载 ntfs格式到磁盘
+   用 ntfsfix命令修复 
+
+    打开终端：如果没有安装ntfs-3g就要安装：sudo apt-get install ntfs-3g
+     
+
+    修复挂载错误的相应的分区如提示中的/dev/sda*，输入：
+
+    sudo ntfsfix /dev/sda*
+

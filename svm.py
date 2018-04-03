@@ -3,8 +3,6 @@ from sklearn import svm, datasets
 
 
 
-
-
 C = 1.0
 gamma = 0.7
 
