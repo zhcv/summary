@@ -124,7 +124,7 @@ fi
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64
 export LD_LIBRARY_PATH=/usr/local/nccl/lib
 export LD_LIBRARY_PATH=/usr/local/nccl/include/
-# export PYTHONPATH=/home/hj/mxnet/python
+
 # export PYTHONPATHngzaoa=~/bingzao-detect/py-faster-rcnn/caffe-fast-rcnn/python:$PYTHONPATH
 
 
