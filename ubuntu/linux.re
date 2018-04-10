@@ -38,6 +38,7 @@ ls -lR | grep "^d"
 ls -d */
 
 
+# git 删除远程垃圾文件
 
 git rm 遠程文件
 git rm *.pyc --cached
@@ -77,11 +78,19 @@ find `pwd` -type f -print | awk -F '/' '{print $8}'
 ps axopid,comm,wchan
 
 
+# 批量修改当前目录文件扩展名
+rename 's//.c//.h/' ./*
+
+# 批量递归修改文件扩展名
+find ./ -name "*.c" | awk -F "." '{print $2}' | xargs -i -t mv ./{}.c  ./{}.h
 
 
 
+# ssh免密码登录 
+ssh user@host 'mkdir -p .ssh && cat >> .ssh/authorized_keys' < ~/.ssh/id_rsa.pub
+# ssh specify file name 
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com" -f $HOME/.ssh/id_rsa
 
-
-
-
-
+# xunhuan
+B=" "
+for i in `cat valChina.txt`;do echo $i$B${i:0-5:1};done > val_China.txt
