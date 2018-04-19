@@ -1,0 +1,30 @@
+﻿人脸对齐，计算机视觉过去几十年研究最多的一个议题
+
+## 本文研究了一个非常深的神经网络在现有的2D和3D人脸对齐数据集上达到接近饱和性能
+的程度。为这个目的，我们提出做了5个贡献：（a）结合最先进的人脸特征点定位
+（landmark localization）架构和最先进的残差模块（residual block），我们首次
+构建了一个非常强大的基准，在一个非常大的2D人脸特征点数据集（facial landmark 
+dataset）上训练，并在所有其他人脸特征点数据集上进行评估。（b）我们创建了一个
+将2D特征点标注转换为3D，并统一所有现有的数据集，从而创建了迄今最大、最具有
+挑战性的3D人脸特征点数据集LS3D-W（约230000张图像）。（c）然后，我们训练一个
+神经网络来进行3D人脸对齐（face alignment），并在新的LS3D-W数据集上进行评估。
+（d）我们进一步研究影响人脸对齐性能的所有“传统”因素，例如大姿态( large pose)，
+初始化和分辨率，并引入一个“新的”因素，即网络的大小。（e）我们的研究显示2D和3D
+人脸对齐网络都实现了非常高的性能，这很可能接近所使用的数据集的饱和性能。
+训练和测试代码以及数据集可以从 https://www.adrianbulat.com/face-alignment/ 下载。
+
+论文：https://arxiv.org/pdf/1703.07332.pdf
+
+Github：https://github.com/1adrianb/face-alignment
+
+以及模型下载
+
+2D-FAN：https://www.adrianbulat.com/downloads/FaceAlignment/2D-FAN-300W.t7
+
+3D-FAN：https://www.adrianbulat.com/downloads/FaceAlignment/3D-FAN.t7
+
+2D-to-3D FAN：https://www.adrianbulat.com/downloads/FaceAlignment/2D-to-3D-FAN.tar.gz
+
+3D-FAN-depth：https://www.adrianbulat.com/downloads/FaceAlignment/3D-FAN-depth
+
+
