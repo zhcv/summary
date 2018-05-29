@@ -14,8 +14,8 @@ function copy_dir_structure()
 # make same directory structure with raw directory
 copy_dir_structure
 
-
-for filename in `find $dcmpath -name "*.dcm"`
+for filename in $dcmpath/*.dcm
+#for filename in `find $dcmpath -name "*.dcm"`
     do
         # temp=`echo ${filename#*xinjiang/} | awk '{print i$0}' i=$jpgpath`
         temp=${filename/$dcmpath/$jpgpath}
