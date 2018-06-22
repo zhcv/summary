@@ -1,8 +1,6 @@
 # coding:utf-8
 '''''
-Created on 2017年3月5日
-
-@author: zxt
+Created on 2017年3月5日 @author: zxt
 '''
 #from io import StringIO
 from io import BytesIO as StringIO
