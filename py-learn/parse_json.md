@@ -12,3 +12,4 @@ import codecs
 with codecs.open(file_name, 'r',encoding='utf-8', errors='ignore') as fdata:
    objects = json.loads(fdata)
 ```
+
