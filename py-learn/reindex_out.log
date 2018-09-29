@@ -1,4 +1,1 @@
-2018-07-31 21:43:42 test_log.py test_log.py <module> 8 INFO - log from logger info
-2018-07-31 21:43:42 test_log.py test_log.py <module> 10 DEBUG - this is from test_log.py
-2018-07-31 21:45:13 test_log.py <module> 8 INFO - log from logger info
-2018-07-31 21:45:13 test_log.py <module> 10 DEBUG - this is from test_log.py
+2018-09-03 22:14:14 logger.py <module> 22 INFO - hello

@@ -19,6 +19,8 @@ warning = logger.warn
 error = logger.error
 critical = logger.critical
 
+info("hello")
+
 """
  %(levelno)s:     打印日志级别的数值
  %(levelname)s:   打印日志级别名称
