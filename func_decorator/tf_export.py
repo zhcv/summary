@@ -111,4 +111,3 @@ class tf_export(object):  # pylint: disable=invalid-name
       module._tf_api_constants = []  # pylint: disable=protected-access
     # pylint: disable=protected-access
     module._tf_api_constants.append((self._names, name))
-
