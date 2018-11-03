@@ -38,7 +38,7 @@ class Solution(object):
 
 if __name__ == '__main__':
     nums = [2,3,5,7,9]
-    target = 10
+    target = 5
     solu = Solution()
     result = solu.twoSum(nums, target)
     print result
