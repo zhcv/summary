@@ -1,14 +1,15 @@
 # 使用 TensorFlow Serving 和 Docker 快速服务于机器学习
 
+
 能够简单快捷地提供机器学习模型是从试验转向生产的关键挑战之一。服务机器学习模型就是采用经训练的模型并使其能够应对预测请求的过程。在生产中服务时，您需要确保您的环境可重现，强制隔离并且是安全的。为此，提供机器学习模型的最简单方法之一是就是将 TensorFlow Serving 与 Docker 结合起来。 Docker 是一种将软件打包成单元（我们称之为容器）的工具，其中包含运行软件所需的一切。
 
-# 使用 TensorFlow Serving 和 Docker 服务 ResNet
+## 使用 TensorFlow Serving 和 Docker 服务 ResNet
 TensorFlow Serving 在 Docker 容器中运行
 
 ![TensorFlow Serving在Docker容器中运行](./640.webp)
 
-自 TensorFlow Serving 1.8 发布以来，我们一直在改进对 Docker 的支持。 我们现在提供 Docker images 用于 CPU 和 GPU 模型的服务和开发。
-为了解使用 TensorFlow Serving 部署模型究竟有多么容易，让我们尝试将 ResNet 模型投入生产。 此模型在 ImageNet 数据集上进行训练，
+自 TensorFlow Serving 1.8 发布以来，我们一直在改进对 Docker 的支持。 我们现在提供 Docker images 用于 CPU 和GPU 模型的服务和开发。
+为了解使用 TensorFlow Serving 部署模型究竟有多么容易，让我们尝试将 ResNet 模型投入生产。 此模型在 ImageNet数据集上进行训练，
 并将 JPEG 镜像作为输入并返回镜像的分类类别。
 
  
@@ -51,29 +52,22 @@ $ docker run -p 8501:8501  --name tfserving_resnet \
 
 分解命令行参数，我们：
 
--p 8501:8501 : 将容器的端口 8501（TensorFlow 服务响应 REST API 请求）
-  发布到主机的端口 8501
+* -p 8501:8501 : 将容器的端口 8501（TensorFlow 服务响应 REST API 请求）发布到主机的端口 8501
 
---name tfserving_resnet : 我们为容器创建名称为 “tfserving_resnet”，
-  这样稍后我们可以作参考
+* --name tfserving_resnet : 我们为容器创建名称为 “tfserving_resnet”，这样稍后我们可以作参考
 
---mount type=bind,source=/tmp/resnet,target=/models/resnet : 
-  在容器（/ models / resnet）上安装主机的本地目录（/ tmp / resnet），
-  以便 TensorFlow 服务可以从容器内部读取模型。
+* --mount type=bind,source=/tmp/resnet,target=/models/resnet : 在容器（/ models / resnet）上安装主机的本地目录（/ tmp / resnet），以便 TensorFlow 服务可以从容器内部读取模型。
 
--e MODEL_NAME=resnet : 告诉 TensorFlow Serving 下载名为 “resnet” 的模型
+* -e MODEL_NAME=resnet : 告诉 TensorFlow Serving 下载名为 “resnet” 的模型
 
--t tensorflow/serving : 基于服务镜像 “tensorflow / serving” 运行 Docker 容器
+* -t tensorflow/serving : 基于服务镜像 “tensorflow / serving” 运行 Docker 容器
 
 
-
-接下来，让我们下载 python 客户端脚本，它将发送服务的模型镜像并获取预测。 
-我们还将测量服务器响应时间。
+接下来，让我们下载 python 客户端脚本，它将发送服务的模型镜像并获取预测。我们还将测量服务器响应时间。
 
 ```shell
 $ curl -o /tmp/resnet/resnet_client.py https://raw.githubusercontent.com/tensorflow/serving/master/tensorflow_serving/example/resnet_client.py
 ```
-
 此脚本将下载猫的镜像并在测量响应时间时将其重复发送到服务器，如脚本的主循环中所示：
 
 ```python
@@ -104,7 +98,7 @@ prediction['classes'], (total_time*1000)/num_requests))
 您应该看到如下所示的输出：
 
 
-```
+```shell
 $ python /tmp/resnet/resnet_client.py
 
 Prediction class: 282, avg latency: 185.644 ms
@@ -112,12 +106,11 @@ Prediction class: 282, avg latency: 185.644 ms
 
 如您所见，使用 TensorFlow Serving 和 Docker 创建模型非常简单直白。您甚至可以创建自己的嵌入式模型的自定义 Docker 镜像，以便更轻松地进行部署。
 
-通过构建优化的 TensorFlow Serving 二进制文件来提高性能
+## 通过构建优化的 TensorFlow Serving 二进制文件来提高性能
 
 既然我们在 Docker 中提供了一个模型，您可能已经注意到来自 TensorFlow Serving 的日志消息如下所示：
 
-Your CPU supports instructions that this TensorFlow binary was not compiled 
-  to use: AVX2 FMA
+```Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA```
 
 
 TensorFlow Serving 已发布的 Docker 镜像旨在竭尽所能来使用 CPU 架构，因此省略了一些优化以最大限度地提高兼容性。如果您没有看到此消息，则您的二进制
@@ -162,13 +155,13 @@ $ docker run -p 8501:8501 --name tfserving_resnet \
 $ python /tmp/resnet/resnet_client.py
 Prediction class: 282, avg latency: 84.8849 ms
 ```
-在我们的机器上，我们看到使用原生优化二进制文件，每次预测平均加速超过
-100毫秒（119％）。在不同的机器（和型号）上您可能会看到不同的结果。
+在我们的机器上，我们看到使用原生优化二进制文件，每次预测平均加速超过100毫秒（119％）。在不同的机器（和型号）上您可能会看到不同的结果。
 
-最后，随意销毁 TensorFlow Serving 容器：
+最后，随意销毁 TensorFlow Serving 容器:
 
 ```shell
 # stop better than kill
 $ docker stop tfserving_resnet
 $ docker kill tfserving_resnet
 ```
+-------------------------------------------------------------------------------
