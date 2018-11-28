@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/adjust_params.iml" filepath="$PROJECT_DIR$/.idea/adjust_params.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../debug/.idea/debug.iml" filepath="$PROJECT_DIR$/../debug/.idea/debug.iml" />
+      <module fileurl="file://$USER_HOME$/jf/rsna_submit_utils/.idea/rsna_submit_utils.iml" filepath="$USER_HOME$/jf/rsna_submit_utils/.idea/rsna_submit_utils.iml" />
+    </modules>
+  </component>
+</project>
