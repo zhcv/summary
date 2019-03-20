@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d36fcaca-2486-484e-8ed6-fba51a7acfb6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/summary.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/summary.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dynamic-Table" beforeDir="false" afterPath="$PROJECT_DIR$/Dynamic-Table" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dynamic-Table/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Dynamic-Table/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c/area" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c/bian/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/c/hello_code/a.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c/bian/hello1.c" beforeDir="false" afterPath="$PROJECT_DIR$/c/hello_code/hello1.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c/bian/hello2.c" beforeDir="false" afterPath="$PROJECT_DIR$/c/hello_code/hello2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c/bian/hello3.c" beforeDir="false" afterPath="$PROJECT_DIR$/c/hello_code/hello3.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c/bian/hello4.c" beforeDir="false" afterPath="$PROJECT_DIR$/c/hello_code/hello4.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c/bian/hello5.c" beforeDir="false" afterPath="$PROJECT_DIR$/c/hello_code/hello5.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c/bian/hello6.c" beforeDir="false" afterPath="$PROJECT_DIR$/c/hello_code/hello6.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c/core" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c/five" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c/func" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c/hello" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c/hi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c/hi.c" beforeDir="false" afterPath="$PROJECT_DIR$/c/bit_op.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c/mac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c/main" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c/msc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c/paths" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c/pwdd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nlp_notes.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/ebook/nlp_notes.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,8 +14,10 @@
     <session id="-742692471">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -93,7 +72,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/TF-IQA" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -125,15 +104,9 @@
   <component name="ToolWindowManager">
     <frame x="1987" y="25" width="2493" height="1415" extended-state="6" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2496935" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25173682" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -141,11 +114,17 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,12 +134,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/c/bian/hello1.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/c/bian/hello1.c" />
   </component>
 </project>
