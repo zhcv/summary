@@ -143,4 +143,11 @@ find . -type f | xargs wc -l
 find . -name *.java | xargs wc -l
 
 # 统计目录结构
-* tree -L 1 -F -C dir
+ tree -L 1 -F -C dir
+*//
+
+
+# VPN-set
+Browser: chrome / firefox Web ---> 
+Extension: 
+[SwithchyOmega](https://github.com/FelisCatus/SwitchyOmega)
