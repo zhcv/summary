@@ -1,0 +1,7 @@
+LIBRARY SocketLibrary
+EXPORTS
+CreateAndConnect
+IoctlSocket
+ReceiveMSG
+SendMSG
+CloseSocket
