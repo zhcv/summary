@@ -74,4 +74,11 @@ usermod  -l  新用户名  -d  /home/新用户名  -m  老用户名
 
 但这种方法只改了表面，你用pwd命令看一下，路径还是之前的用户名。
 ```
+
+### ftpget/ftpput
+```
+ftpput -u FtpUser -p 123456 192.168.8.x -P 17088 abc   bcd  
+ftpget -u FtpUser -p 123456 192.168.8.x -P 17088 ipc_main ipc_main
+```
+
 --------------------- 
